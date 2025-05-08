@@ -1,18 +1,22 @@
+/* jshint esversion: 6, browser: true */
 const profile = {
-  username: "Jacob",
-  playTime: 300,
+	username: "Jacob",
+	playTime: 300,
 
-  getInfo() {
-    return `${this.username} has ${this.playTime} active hours!`;
-  },
+	getInfo() {
+		"use strict";
+		return `${this.username} has ${this.playTime} active hours!`;
+	},
 
-  changeUsername(newName) {
-    this.username = newName;
-  },
+	changeUsername(newName) {
+		"use strict";
+		this.username = newName;
+	},
 
-  updatePlayTime(hours) {
-    this.playTime += hours;
-  },
+	updatePlayTime(hours) {
+		"use strict";
+		this.playTime += hours;
+	},
 };
 
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
