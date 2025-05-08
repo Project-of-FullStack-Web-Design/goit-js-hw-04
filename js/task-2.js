@@ -1,4 +1,4 @@
-/* jshint esversion: 6 */
+
 function calcAverageCalories(days) {
     let totalCalories = 0;
     for (const day of days) {

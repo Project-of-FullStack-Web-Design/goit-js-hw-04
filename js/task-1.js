@@ -1,11 +1,10 @@
-/* jshint esversion: 6 */
 function isEnoughCapacity(products, containerSize) {
-    let totalProducts = 0;
+  let totalProducts = 0;
 
-    for (const value of Object.values(products)) {
-        totalProducts += value;
-    }
-    return (totalProducts <= containerSize) ? true : false;
+  for (const value of Object.values(products)) {
+    totalProducts += value;
+  }
+  return totalProducts <= containerSize ? true : false;
 }
 
 console.log(isEnoughCapacity({apples: 2, grapes: 3, carrots: 1}, 8)); // true
